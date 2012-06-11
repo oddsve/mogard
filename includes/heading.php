@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Mo Gård, Laksefiske, Gaula, Movaldet, Mohølen, Arne Nordbotn, Melhus" />
+    <title>Mo gård</title>
+    <link rel="stylesheet" href="stylesheets/style.css"/>
+
+  </head>
+  <body>  
+    <div class="top">  
+        <div class="hidden">Mo Gård, Laksefiske, Gaula, Movaldet, Mohølen, Arne Nordbotn, Melhus</div>
+        <div class="header">
+            <ul id="jsddm">
+            <li id="logo">
+                <a href="index.php">
+                    <img  src="images/logo.png" />
+                </a>
+            </li>
+                    <li><a href="index.php">Movaldet</a></li>
+            <li><a href="info.php">Mer info om valdet</a></li>
+            <li><a href="holer.php">Hølene</a></li>
+            <li><a href="overnatting.php">Overnatting</a></li>
+            <li><a href="priser.php">Priser</a></li>
+            </ul>
+        </div>
+
+        <div class="bilder">
+        <img class="ving" src="images/huset.jpg" />
+        <img src="images/elva.jpg" />
+        <img class="ving" src="images/holen.jpg" />
+        </div>
+    </div>
