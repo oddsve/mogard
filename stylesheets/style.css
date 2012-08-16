@@ -21,6 +21,9 @@ sup {
     position: relative;
 }
 
+p {
+  margin-bottom: 10px;
+}
 /*---------------------------------
 // HEADER 
 ---------------------------------*/
@@ -146,6 +149,10 @@ div.priser
   
 }
 
+div.priser table{
+  margin-top: 20px;
+}
+
 div.priser table,td
 {
   font-size: 0.9em;
@@ -173,7 +180,7 @@ td.rightAlign
   text-align:right;
 }
 
-div.years a
+div a
 {
     color: White;
 }
@@ -245,7 +252,7 @@ div.kampanje
     padding: 20px;
 }
 
-div.kampanje h1,p 
+div.kampanje h1, div.kampanje p 
 {
     margin: 0;
 }

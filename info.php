@@ -3,7 +3,6 @@
   <div class="left">
 
       <div id="bilder">
-        <h3>Valdet</h3>
           <img src="images/valdet.jpg"/>
           <p>Oversiktsbilde over valdet.</p>
       </div>

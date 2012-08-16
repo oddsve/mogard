@@ -2,7 +2,6 @@
 <div class="innhold">
   <div class="left">
       <div id="bilder">
-        <h3>Bilder</h3>
         <img src="images/overnatting1.jpg"/>
         <p>Fra sofaen i stua har man panoramautsit over valdet.</p>
         <img src="images/overnatting2.jpg"/>

@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    $loggedIn = ($_SESSION["loggedin"] == "Jepp");
+
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -22,6 +27,9 @@
             <li><a href="holer.php">Hølene</a></li>
             <li><a href="overnatting.php">Overnatting</a></li>
             <li><a href="priser.php">Priser</a></li>
+            <?php
+                if ($loggedIn) echo '<li>(Logget inn)</li>'   ;
+            ?>    
             </ul>
         </div>
 
