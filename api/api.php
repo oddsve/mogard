@@ -10,6 +10,8 @@
     $app->get('/years/:year', 'getUkePris');
     $app->put('/years/:year/:week', 'updateUkePris');
     $app->post('/years', 'createNewYear');
+    $app->delete('/years/:year', 'deleteYear');
+    
     
     
     $app->run();
@@ -151,6 +153,26 @@
         
     }
 
+    function deleteYear( $year ){
+        
+        $filename = "../data/priser.json";
+        
+        $handle = fopen( $filename, "r"); 
+        $json = fread($handle, filesize($filename));
+        fclose($handle);
+        $priser = json_decode($json,true);
+        
+        unset($priser[$year]);       
+        
+        $json  = json_encode($priser);
+        
+        $handle = fopen( $filename, "w"); 
+        fwrite($handle, $json);
+        fclose($handle);
+        
+        echo 'OK';
+        
+    }
     
     
 /*

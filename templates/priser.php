@@ -4,7 +4,7 @@
 
 
 <script id ="year" type="text/html">
-    <li><div><span  data-bind="id">Ny</span><button>X</button></div></li>    
+    <li><div><span  data-bind="id">Ny</span></div><button>X</button></li>    
 </script>
 
 

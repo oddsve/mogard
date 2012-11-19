@@ -8,8 +8,13 @@ var year = $$(
     {},
     $('#year').html(),
     {
-        'click &' : function(){
+        'click div' : function(){
             this.trigger('newYear',this.model.get('id'));
+        },
+        
+        'click button':function(){
+            this.erase();
+            this.destroy();
         },
         
         'persist:save:success':function(){

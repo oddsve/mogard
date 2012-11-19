@@ -147,24 +147,27 @@ div.innhold
 
 ul.years{
     margin:0;
-
 }
 
 ul.years li{
     float: left;
-    margin: 0 0.2em;
+    margin: 0 0.5em;
     cursor: pointer;
+    }
+
+ul.years li div{
     text-decoration: underline; 
-    background-color: red;
+    background-color: #ffeeff;
+    color:black;
     padding: 0.4em 0.8em;
     border-radius: 10px;
 }
 
+
 ul.years button{
     position: relative;
-    top: -2.2em;
-    left: 2.2em;
-    
+    top: -5.8em;
+    left: 6.2em;  
 }
 
 div.priser
@@ -184,13 +187,11 @@ div.priser ul{
 ul.priser ul {
     font-size: 0.6em;
     padding: 5px;
-    border: solid 1px white;
-    
+    border: solid 1px white;   
 }
 
 div.priser li.ukepris {
-    float: left;
-    
+    float: left;   
 }
 
 li.uke {
