@@ -41,7 +41,7 @@ var yearPicker = $$(
         
         'create' : function(){
             if (loggedIn != "Jepp"){
-                this.view.$('button').addClass('hide');
+                this.view.$('.createNewYear').addClass('hide');
                
             }
         }
@@ -61,12 +61,15 @@ var ukePris = $$
         'click .pris' : function(){
             if (loggedIn == "Jepp"){
                 this.view.$('.pris').addClass('hide');
-                this.view.$('.prisboks').removeClass('hide');
+                this.view.$('.prisboksli').removeClass('hide');
+                this.view.$('.prisboks').focus();
+                this.view.$('.prisboks').select();
+                
             }
         },
         
-        'blur .prisboks' : function(){
-            this.view.$('.prisboks').addClass('hide');
+        'blur .prisboksli' : function(){
+            this.view.$('.prisboksli').addClass('hide');
             this.view.$('.pris').removeClass('hide');              
             this.save();
         },

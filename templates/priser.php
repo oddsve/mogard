@@ -21,7 +21,7 @@
         <ul>
             <li class="uke">
                 <span class="ukeNr">Uke <span data-bind="id"></span></span>
-                <span data-bind="antDager"></span> <span data-bind="benevning">dager</span>
+                <span class="antall"><span data-bind="antDager"></span> <span data-bind="benevning">dager</span></span>
             </li>
             <li class="datoer">
                 <span class="date" data-bind="fromDate"></span>  
@@ -29,7 +29,7 @@
             </li>
             <li class="tall pris"> <span class="pris" data-bind="Pris"></span> kr</li>
             <li class="solgt tall hide">Utsolgt</span></li>
-            <li class="tall"><input class="prisboks hide" type="text" data-bind="Pris"></input></li>
+            <li class="tall prisboksli hide"><input class="prisboks" type="text" data-bind="Pris"></input> kr</li>
             
             <li><button class="book">Bestill</button></li>
             <li><button class="unbook hide">Kanseler</button></li>

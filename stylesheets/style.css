@@ -185,7 +185,9 @@ div.priser
   
 }
 
-div.priser{
+.antall{
+  float: right;   
+  margin-top: 5px;
 }
 
 div.priser ul{
@@ -193,8 +195,13 @@ div.priser ul{
     padding:0;
 }
 
+.ukepris button {
+    font-size: 1.2em;
+}
+
 div.yearPicker{
     margin-top: 27px;
+    margin-right: 20px;
     
 }
 
@@ -204,6 +211,7 @@ ul.priser ul {
 }
 
 div.priser li.ukepris {
+    font-size: 1.4em;
     float: left;
     background-color: #ffffff;
     color: black;
@@ -211,7 +219,8 @@ div.priser li.ukepris {
     margin-left: 10px;
     margin-bottom: 20px;
     margin-right: 10px;
-    min-width: 200px;
+    min-width: 22%;
+    padding: 0 10px 0 5px;
 }
 
 .ukeNr {
@@ -224,13 +233,15 @@ div.priser li.ukepris {
 
 li.tall {
     text-align: right;
-    font-size: 1.3em;
+    font-size: 1.7em;
     font-weight: bold;
     line-height: 3em;
 }
 
 .prisboks {
     text-align: right;
+    font-size: 1em;
+    width: 200px;
 }
 
 
