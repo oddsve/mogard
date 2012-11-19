@@ -23,6 +23,13 @@ var year = $$(
 
         'doSave': function(){
             this.save();            
+        },
+        
+        'create': function(){
+            if (loggedIn != "Jepp"){
+                this.view.$('button').addClass('hide');
+               
+            }           
         }
     }
 ).persist($$.adapter.restful, {collection: 'years'});
