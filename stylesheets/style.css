@@ -24,6 +24,15 @@ sup {
 p {
   margin-bottom: 10px;
 }
+
+
+.hide {
+    display: none;
+}
+
+.clearfix{
+    clear:both;
+}
 /*---------------------------------
 // HEADER 
 ---------------------------------*/
@@ -136,37 +145,65 @@ div.innhold
   color:White;
 }
 
-div.priser td.leftAlign
-{
-  text-align:left;
+ul.years{
+    margin:0;
+
+}
+
+ul.years li{
+    float: left;
+    margin: 0 0.2em;
+    cursor: pointer;
+    text-decoration: underline; 
+    background-color: red;
+    padding: 0.4em 0.8em;
+    border-radius: 10px;
+}
+
+ul.years button{
+    position: relative;
+    top: -2.2em;
+    left: 2.2em;
+    
 }
 
 div.priser
 {
   position: absolute; 
-  left: 0 ;
+  left: 20px ;
   width: 1280px;
   
 }
 
-div.priser table{
-  margin-top: 20px;
+div.priser ul{
+    list-style: none;
+    padding:0;
+
 }
 
-div.priser table,td
-{
-  font-size: 0.9em;
-  border-style:solid;
-  border-width:1px;
-  border-color: White;
-  border-spacing: 0;
+ul.priser ul {
+    font-size: 0.6em;
+    padding: 5px;
+    border: solid 1px white;
+    
 }
 
-div.priser td
-{
-  text-align:right;
-  padding : 4px;
+div.priser li.ukepris {
+    float: left;
+    
 }
+
+li.uke {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+li.tall {
+    text-align: right;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
 
 div.statistik table,td,th
 {
@@ -266,4 +303,8 @@ div.error
     background-color:  #990000;
     width: 30%;
     padding: 2px 15px 2px 5px;
+}
+
+.templates {
+    display: none;
 }

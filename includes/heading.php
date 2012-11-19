@@ -1,6 +1,10 @@
 <?php
     session_start();
-    $loggedIn = ($_SESSION["loggedin"] == "Jepp");
+    $loggedIn = false;
+    if (array_key_exists("loggedin", $_SESSION)){
+        $loggedIn = ($_SESSION["loggedin"] == "Jepp");
+    }
+    
 
 ?>
 <!DOCTYPE html>

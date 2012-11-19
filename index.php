@@ -1,4 +1,6 @@
-<?php include 'includes/heading.php';?>
+<?php 
+    include 'includes/heading.php';
+?>
 <div class="innhold">
   <div class="left">
         <div class="kampanje">
