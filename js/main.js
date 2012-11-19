@@ -29,7 +29,7 @@ var year = $$(
             if (loggedIn != "Jepp"){
                 this.view.$('button').addClass('hide');
                
-            }           
+            }            
         }
     }
 ).persist($$.adapter.restful, {collection: 'years'});
