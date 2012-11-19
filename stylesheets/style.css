@@ -157,12 +157,19 @@ ul.years li{
 
 ul.years li div{
     text-decoration: underline; 
-    background-color: #ffeeff;
+    background-color: #ffffff;
     color:black;
     padding: 0.4em 0.8em;
     border-radius: 10px;
 }
 
+.priserHeading{
+    float: left;
+}
+
+.yearPicker {
+    float: right;
+}
 
 ul.years button{
     position: relative;
@@ -178,31 +185,52 @@ div.priser
   
 }
 
+div.priser{
+}
+
 div.priser ul{
     list-style: none;
     padding:0;
+}
 
+div.yearPicker{
+    margin-top: 27px;
+    
 }
 
 ul.priser ul {
     font-size: 0.6em;
     padding: 5px;
-    border: solid 1px white;   
 }
 
 div.priser li.ukepris {
-    float: left;   
+    float: left;
+    background-color: #ffffff;
+    color: black;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    min-width: 200px;
 }
 
-li.uke {
+.ukeNr {
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 2em;
+    margin-right:  1em;
 }
+
+
 
 li.tall {
     text-align: right;
     font-size: 1.3em;
     font-weight: bold;
+    line-height: 3em;
+}
+
+.prisboks {
+    text-align: right;
 }
 
 

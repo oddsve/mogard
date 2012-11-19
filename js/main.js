@@ -1,9 +1,3 @@
-var heading = $$(
-    {},
-    $('#header').html(),
-    {}
-);
-
 var year = $$(
     {},
     $('#year').html(),
@@ -39,7 +33,7 @@ var yearPicker = $$(
     {},
     $('#yearPicker').html(),
     {
-        'click button': function(){
+        'click .createNewYear': function(){
             var newYear = $$(year);
             newYear.controller.doSave();
             this.append(newYear,'ul');
@@ -125,44 +119,46 @@ var priser = $$(
     {},
     $('#priser').html(),
     {
-        'newYear': function(year) {
-            this.model.set({"year":year});
-            ukePris.persist($$.adapter.restful, {collection:'years/'+ year});
+        'change': function() {
+            ukePris.persist($$.adapter.restful, {collection:'years/'+ this.model.get("year")});
             this.empty();
             this.gather(ukePris,'append', 'ul.priser');
         }
     }
 ).persist();
 
+var heading = $$(
+    {},
+    $('#header').html(),
+    {}
+);
+
 var main = $$({
     model: {},
     view: {},
     controller:{ 
         'create': function(){
-            headingView = $$(heading);
-            yearPickerView = $$(yearPicker);
-            priserView = $$(priser);
-            
-            this.append(headingView);
-            this.append(yearPickerView);
-            yearPickerView.gather(year,'append','ul');
-            
-            
-            
-            this.append(priserView);
-            
             var firstYear = new Date().getFullYear();
-            
-            
             if (new Date().getMonth() > 7 ) {
                 firstYear++;
             }
-                
-            priserView.controller.newYear(firstYear);
+
+            headingView = $$(heading,{'year':firstYear});
+            this.append(headingView);
             
+            
+            yearPickerView = $$(yearPicker);
+            this.append(yearPickerView);
+            yearPickerView.gather(year,'append','ul');
+            
+            priserView = $$(priser,{'year':firstYear});
+            this.append(priserView);
+            priserView.model.reset();
         },
+        
         'child:newYear': function(){
-            priserView.controller.newYear(arguments[1]);
+            headingView.model.set({'year': arguments[1]});
+            priserView.model.set({'year': arguments[1]});
         }
     }
 });

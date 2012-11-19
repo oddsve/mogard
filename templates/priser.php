@@ -9,23 +9,27 @@
 
 
 <script id ="yearPicker" type="text/html">
-    <div>
-        <span>Velg år:</span> 
-        <ul class="years"></ul>
+    <div class="yearPicker">
+        <ul class="years">
+        <li><div class="createNewYear"><span>Nytt år</span></div></li> 
+        </ul>
     </div>
-    <div class="clearfix"><button class="CreateNewYear">Opprett nytt år</bitton></div>
 </script>
 
 <script id ="ukePris" type="text/html">
     <li class="ukepris">
         <ul>
-            <li class="uke">Uke <span data-bind="id"></span></li>
-            <li><span data-bind="antDager"></span> <span data-bind="benevning">dager</dager></li>
-            <li>Fra <span class="date" data-bind="fromDate"></span>  
-                til <span class="date" data-bind="toDate"></span></li>
+            <li class="uke">
+                <span class="ukeNr">Uke <span data-bind="id"></span></span>
+                <span data-bind="antDager"></span> <span data-bind="benevning">dager</span>
+            </li>
+            <li class="datoer">
+                <span class="date" data-bind="fromDate"></span>  
+                - <span class="date" data-bind="toDate"></span>
+            </li>
             <li class="tall pris"> <span class="pris" data-bind="Pris"></span> kr</li>
             <li class="solgt tall hide">Utsolgt</span></li>
-            <li><input class="prisboks hide" type="text" data-bind="Pris"></input></li>
+            <li class="tall"><input class="prisboks hide" type="text" data-bind="Pris"></input></li>
             
             <li><button class="book">Bestill</button></li>
             <li><button class="unbook hide">Kanseler</button></li>
@@ -34,13 +38,12 @@
 </script>
 
 <script id ="priser" type="text/html">
-    <div>
-    <h3>Priser <span data-bind="year"></span></h3> 
+    <div class="prisArea clearfix">
     <ul class="priser"></ul>
     </div>
 </script>
 
 <script id ="header" type="text/html">
-    <h2>Priser <span class="pickedYear"></span></h2>
+    <div class="priserHeading"><h2>Priser <span data-bind="year"></span></h2></div>
 </script>
 </div>
