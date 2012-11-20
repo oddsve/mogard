@@ -56,14 +56,16 @@
             $y['Year']=$year;
             
              
-            $fromDate=strtotime($year."W".$key);
-            if ($fromDate < strtotime($year."0601")){
+            $fromDate=strtotime($year."W".$key. "- 2 days");
+            if ($fromDate <= strtotime($year."0603")){
+                //hvis første uken bare er en to dager legges den til dan 2. uken
                 $fromDate = strtotime($year."0601");
             }
             $y['fromDate']=date('d.m',$fromDate);
 
-            $toDate=strtotime($year."W".$key. "+ 6 days");
-            if ($toDate > strtotime($year."0831")){
+            $toDate=strtotime($year."W".$key. "+ 5 days");
+            if ($toDate >= strtotime($year."0828")){ 
+                //uker som slutter etter 28. aug tar med seg siste helgen
                 $toDate = strtotime($year."0831");
             }
             $y['toDate']=date('d.m',$toDate);
@@ -127,10 +129,14 @@
         
         date_default_timezone_set("Europe/Paris");
         
-        $startDate = strtotime($newYear."0601");
+        $startDate = strtotime($newYear."0605"); 
+        //legger til 2 dager for å håndtere at uken starter på lørdag
+        //legger til 2 dager for å håndtere korte startuker
         $startWeek = date('W',$startDate);
         
         $endDate = strtotime($newYear."0831");
+        //legger til 2 dager for å håndtere at uken starter på lørdag
+        //trekker ifra 2 dager for siste uken begynner etter 29. aug blr den med i nest siste uke
         $endWeek = date('W',$endDate);
         
         
@@ -139,8 +145,6 @@
             $priser[$newYear][$i]['Solgt']="Nei";
             $priser[$newYear][$i]['Pris']="10 000";
         }
-        
-        
         
         
         $json  = json_encode($priser);

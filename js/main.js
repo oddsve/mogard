@@ -13,10 +13,12 @@ var year = $$(
         
         'persist:save:success':function(){
             this.view.sync();
+            this.trigger('newYear',this.model.get('id'));
+
         },
 
         'doSave': function(){
-            this.save();            
+            this.save();    
         },
         
         'create': function(){

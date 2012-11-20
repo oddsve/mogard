@@ -20,4 +20,7 @@
     <li>Bord og stoler</li>
     <li>Parafinlamper</li>
   </ul>
+    <li>Du disponerer egen elvebåt</li>
+    
+    
 </ul>

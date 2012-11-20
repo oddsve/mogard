@@ -3,11 +3,6 @@
 ?>
 <div class="innhold">
   <div class="left">
-        <div class="kampanje">
-            <h1>Nyhet!</h1>
-            <p>Nå selger vi halve uker også!</p>
-            <small>Ta kontakt for å avtale tid.</small>
-        </div>
       
         <?php include 'includes/statistikk.php'; ?>
     </div>  
