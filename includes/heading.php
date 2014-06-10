@@ -32,6 +32,7 @@
             <li><a href="overnatting.php">Overnatting</a></li>
             <li><a href="priser.php">Priser</a></li>
             <?php
+                if ($loggedIn) echo '<li><a href="registrerFangst.php">Fangst</a></li>'   ;
                 if ($loggedIn) echo '<li><a href="logout.php">Logg ut</a></li>'   ;
             ?>    
             </ul>
