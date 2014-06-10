@@ -1,21 +1,16 @@
 <?php
-    $melding = "";
+
     $error = false;
-    if ( !empty($_POST) ){
-        if ($_POST["passord"] != "jak0b") {
-            $error = true;
-            $melding = "$melding <li>Passordet du oppga var feil.</li>";
-        }
- 
+    if (array_key_exists("reason", $_GET)){
 
-        if (!$error){
-            $_SESSION["loggedin"] = "Jepp";
-            header("Location: index.php"); /* Redirect browser */
-        } else {
-            $_SESSION["loggedin"] = "Nope";
+        $melding= "";
+        if ($_GET["reason"] == "pwd"){
+            $melding = "$melding <li> Feil passord </li>";
         }
 
+        $error = true;
     }
+
 ?>
 
 <div class="statistik"> 
@@ -29,7 +24,7 @@
         }
     ?>
 
-    <form method="POST" action="#">
+    <form method="POST" action="auth.php">
                 <input name="passord" type="password"/>
                     <input value="Log inn" type="submit"/>
                 
