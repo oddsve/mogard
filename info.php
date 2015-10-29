@@ -3,11 +3,11 @@
   <div class="left">
 
       <div id="bilder">
-          <img src="images/valdet.jpg"/>
+          <img src="images/valdet.jpg"/ width="95%">
           <p>Oversiktsbilde over valdet.</p>
       </div>
- 
-      
+
+
   </div>
   <div class="beskrivelse">
     <div class="ark">
@@ -18,4 +18,3 @@
 </div>
 
 <?php include 'includes/footer.php';	?>
-

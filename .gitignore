@@ -2,3 +2,5 @@
 .DS_Store
 nbproject/*
 data/*
+.htaccess
+.apdisk

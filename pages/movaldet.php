@@ -1,7 +1,7 @@
     <h2>Movaldet</h2>
     <p>
       Movaldet - også kalt Mohølen -ligger på vestsiden av Gaula på på grensen mellom Melhus og
-      Kvål i Melhus kommune, vel en mils vei oppstrøms munningen av elven. Valdet er 550 meter langt.
+      Kvål i Melhus kommune, vel en mils vei oppstrøms munningen av elven. Valdet er ca 700 meter langt.
     </p>
 
     <p>
