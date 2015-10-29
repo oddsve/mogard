@@ -65,6 +65,7 @@ div.header img
   margin-left: -15px;
 }
 
+
 @media all and (min-width:1025px)
 {
 
@@ -84,6 +85,9 @@ div.header img
     }
 }
 
+.header li {
+  margin-top: 11px;
+}
 
 
 .header ul
@@ -106,6 +110,10 @@ div.top
   font-family: Tangerine;
   font-size: 50px;
   text-transform: none;
+}
+
+#logoli {
+  margin-top: 0;
 }
 /*---------------------------------
 // bilder

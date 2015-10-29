@@ -23,10 +23,8 @@
         <div class="hidden">Mo Gård, Laksefiske, Gaula, Movaldet, Mohølen, Arne Nordbotn, Melhus</div>
         <div class="header">
             <ul id="jsddm">
-            <li >
-                <a class="logo" href="index.php">Mo Gård</a>
-            </li>
-                    <li><a href="index.php">Movaldet</a></li>
+            <li id="logoli" ><a class="logo" href="index.php">Mo Gård</a></li>
+            <li><a href="index.php">Movaldet</a></li>
             <li><a href="info.php">Mer info om valdet</a></li>
             <li><a href="holer.php">Hølene</a></li>
             <li><a href="overnatting.php">Overnatting</a></li>
